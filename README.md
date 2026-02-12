@@ -112,3 +112,7 @@ No transitive dependency
 All attributes depend only on primary key
 
 Database is fully normalized up to 3NF.
+
+## 🔗 ER Diagram
+
+![ER Diagram](er-diagram.png)
