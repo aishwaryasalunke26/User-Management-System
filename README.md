@@ -116,3 +116,37 @@ Database is fully normalized up to 3NF.
 ## 🔗 ER Diagram
 
 ![ER Diagram](er-diagram.png)
+
+## 🧠 Database Normalization
+
+### 1NF (First Normal Form)
+- Each column contains atomic (single) values.
+- No repeating groups.
+- Each table has a primary key.
+
+In this project:
+- Users table stores one value per field.
+- Messages table stores one message per row.
+
+---
+
+### 2NF (Second Normal Form)
+- Table must be in 1NF.
+- All non-key attributes fully depend on the primary key.
+
+In this project:
+- In users table, name, email, password depend on id.
+- In messages table, message_text and sent_at depend on id.
+
+---
+
+### 3NF (Third Normal Form)
+- Table must be in 2NF.
+- No transitive dependency.
+
+In this project:
+- No column depends on another non-key column.
+- All fields depend only on the primary key.
+
+Therefore, the database is normalized up to 3NF.
+
